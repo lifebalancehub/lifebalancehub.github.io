@@ -1,31 +1,21 @@
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* BODY */
+/* FORCE TEST – ถ้าอันนี้ไม่ขึ้น แปลว่า CSS ไม่ถูกโหลด */
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #2f3e46;
-  background: #ffffff;
-  line-height: 1.6;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 /* HERO */
 .hero {
   width: 100%;
   height: 100vh;
-  background: url("/hero-new.png") center center / cover no-repeat;
+  background: url("https://lifebalancehub.github.io/hero-new.png") center center / cover no-repeat;
 }
-
 
 /* OVERLAY */
 .hero-overlay {
   width: 100%;
   height: 100vh;
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255,255,255,0.6);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,95 +32,32 @@ body {
 
 .hero h2 {
   font-size: 1.4rem;
-  font-weight: 400;
-  margin-bottom: 1rem;
+  font-weight: normal;
 }
 
 .hero-sub {
-  max-width: 600px;
-  margin-bottom: 2rem;
-  color: #4f6469;
+  margin-top: 1rem;
 }
 
 /* BUTTONS */
 .buttons {
-  display: flex;
-  gap: 1rem;
+  margin-top: 2rem;
 }
 
 .btn {
-  padding: 0.8rem 1.8rem;
-  border-radius: 30px;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
   text-decoration: none;
-  font-size: 1rem;
+  margin: 0 0.5rem;
+  display: inline-block;
 }
 
 .btn.primary {
   background: #5fa8a3;
-  color: #ffffff;
+  color: #fff;
 }
 
 .btn.secondary {
   border: 1px solid #5fa8a3;
   color: #5fa8a3;
-  background: #ffffff;
-}
-
-/* SECTIONS */
-.section {
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-.section.light {
-  background: #f5f9f8;
-}
-
-.section h3 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-/* CARDS */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 1.5rem;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.card {
-  background: #ffffff;
-  padding: 1.5rem;
-  border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-}
-
-/* THREE COLS */
-.three-cols {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-/* FOOTER */
-footer {
-  padding: 2rem;
-  text-align: center;
-  border-top: 1px solid #eaeaea;
-}
-
-.small {
-  font-size: 0.85rem;
-  color: #777;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.3rem;
-  }
 }
