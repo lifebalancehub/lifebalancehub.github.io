@@ -18,7 +18,7 @@ p {
 
 /* ===== HERO ===== */
 .hero {
-  background: url("../images/hero-ocean.jpg") center / cover no-repeat;
+  background: url("../../hero-ocean.jpg") center / cover no-repeat;
   height: 90vh;
   position: relative;
 }
