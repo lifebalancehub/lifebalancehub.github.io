@@ -16,7 +16,10 @@ body {
 /* ===== HERO ===== */
 .hero {
   min-height: 100vh;
-  background: url("../../hero-ocean.jpg") center / cover no-repeat;
+  background-image: url("/hero-ocean.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
   position: relative;
 }
 
