@@ -7,28 +7,25 @@
 
 /* ===== BODY ===== */
 body {
-  font-family: "Segoe UI", system-ui, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: #2f3e46;
   background: #ffffff;
   line-height: 1.6;
 }
 
-/* ===== HERO ===== */
+/* ===== HERO (พื้นหลังภาพ) ===== */
 .hero {
   min-height: 100vh;
-  background-image: url("/hero-ocean.jpg");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-  position: relative;
+  background-image: url("/94f6a08a-4951-4a89-845b-b6ab0474fc4b.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+/* ชั้นโปร่งแสงทับภาพ */
 .hero-overlay {
   min-height: 100vh;
-  background: linear-gradient(
-    rgba(255, 255, 255, 0.75),
-    rgba(255, 255, 255, 0.85)
-  );
+  background: rgba(255, 255, 255, 0.75);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,10 +34,10 @@ background-repeat: no-repeat;
   padding: 3rem 1.5rem;
 }
 
+/* ===== TEXT ===== */
 .hero h1 {
-  font-size: 3.2rem;
+  font-size: 3rem;
   margin-bottom: 0.5rem;
-  color: #2f4f4f;
 }
 
 .hero h2 {
@@ -52,7 +49,7 @@ background-repeat: no-repeat;
 .hero-sub {
   max-width: 640px;
   margin-bottom: 2rem;
-  color: #5c6f73;
+  color: #4f6469;
 }
 
 /* ===== BUTTONS ===== */
@@ -63,7 +60,7 @@ background-repeat: no-repeat;
   text-decoration: none;
   font-size: 1rem;
   margin: 0 0.4rem;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
 }
 
 .btn.primary {
@@ -87,7 +84,7 @@ background-repeat: no-repeat;
 
 /* ===== SECTIONS ===== */
 .section {
-  padding: 4.5rem 2rem;
+  padding: 4rem 2rem;
   text-align: center;
 }
 
@@ -149,15 +146,14 @@ background-repeat: no-repeat;
 
 /* ===== FOOTER ===== */
 footer {
-  padding: 2.5rem 1.5rem;
+  padding: 2rem;
   text-align: center;
-  background: #ffffff;
   border-top: 1px solid #eaeaea;
 }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
   }
 }
